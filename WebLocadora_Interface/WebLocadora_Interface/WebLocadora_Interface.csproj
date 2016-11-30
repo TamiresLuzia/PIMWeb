@@ -192,6 +192,8 @@
     <Content Include="Js\wow.min.js" />
     <Content Include="Login.aspx" />
     <Content Include="Reservar.aspx" />
+    <Content Include="TesteLogin\EsqueceuSenha.html" />
+    <Content Include="TesteLogin\Login e Cadastro.html" />
     <Content Include="VecEsportivos.html" />
     <Content Include="VecExecutivos.html" />
     <Content Include="VecPopulares.html" />
