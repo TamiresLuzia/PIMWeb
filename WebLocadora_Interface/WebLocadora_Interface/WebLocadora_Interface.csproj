@@ -94,6 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Img\AbrirReserva.png" />
+    <Content Include="Img\CancRese.png" />
+    <Content Include="Img\Consul.png" />
+    <Content Include="Img\Vec.png" />
     <Content Include="LOGIN\EsqueceuSenha.html" />
     <Content Include="LOGIN\Login e Cadastro.html" />
     <Content Include="packages.config" />
@@ -193,7 +197,11 @@
     <Content Include="Js\npm.js" />
     <Content Include="Js\wow.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="ReservaLocacao.html" />
     <Content Include="Reservar.aspx" />
+    <Content Include="TestAbrir.aspx" />
+    <Content Include="TestCancelar.aspx" />
+    <Content Include="TestConsultar.aspx" />
     <Content Include="VecEsportivos.html" />
     <Content Include="VecExecutivos.html" />
     <Content Include="VecPopulares.html" />
@@ -257,6 +265,27 @@
     </Compile>
     <Compile Include="Reservar.aspx.designer.cs">
       <DependentUpon>Reservar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestAbrir.aspx.cs">
+      <DependentUpon>TestAbrir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestAbrir.aspx.designer.cs">
+      <DependentUpon>TestAbrir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestCancelar.aspx.cs">
+      <DependentUpon>TestCancelar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestCancelar.aspx.designer.cs">
+      <DependentUpon>TestCancelar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestConsultar.aspx.cs">
+      <DependentUpon>TestConsultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestConsultar.aspx.designer.cs">
+      <DependentUpon>TestConsultar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vistoria.aspx.cs">
       <DependentUpon>Vistoria.aspx</DependentUpon>

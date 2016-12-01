@@ -1,18 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reservar.aspx.cs" Inherits="SiteLocadora_Interface.Reservar" %>
 
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+        <meta charset="UTF-8"/>
 
     <title>PATRIOT RETEND</title>
 
-    <link rel="shortcut icon " img src="../img/favicon.png" />
-
 
     <!--Css -->
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-    <link href="Css/bootstrap-theme.css" rel="stylesheet" />
+
     <link href="Css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="Css/bootstrap-theme.css" rel="stylesheet" />
     <link href="Css/bootstrap.css" rel="stylesheet" />
     <link href="Css/bootstrap.min.css" rel="stylesheet" />
     <link href="Css/default.css" rel="stylesheet" />
@@ -34,7 +35,11 @@
     <script src="Js/custom.js"></script>
     <link href="Fonts/font-awesome.min.css" rel="stylesheet" />
 
+    <form id="form2" runat="server">
+
+    <div>
     <div id="preloader">
+
         <div id="load">
 
         </div>
@@ -43,26 +48,28 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
-                <button type="button" class="nav-alterare" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.aspx">
+
                     <h1>Patriot Retend</h1>
                 </a>
             </div>
 
-		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#intro">Home</a></li>
+                    <li class="active"><a href="Home.html">Home</a></li>
                     <li><a href="Veiculo.html">Veículos</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                    <li><a href="Reservar.aspx">Reserva/Locação</a></li>
+                     <li><a href="ReservaLocacao.html">Reserva/Locação</a></li>
                 </ul>
             </div>
+
 
         </div>
 
     </nav>
+
 
     <section id="intro" class="intro">
 
@@ -76,86 +83,48 @@
             </a>
         </div>
     </section>
-
-    <section class="home-section text-center">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="section-heading">
-                    <h2>Veículos Executivos</h2><br/><br/>
-
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-3">
-                    <div class="wow bounceInUp" data-wow-delay="0.2s">
-
-                        <div class="team boxed-grey">
-                            <div class="inner">
-                                <h5>Audi A4</h5>    
-                                <div class="avatar">
-                                <a href="VeiculoExecutivo/AudiA4.html">
-                                <img src="img/Exe/AudiA4_Exec.png" alt="" class="img-responsive img-rounded" /></a>
-                                </div>
-                            </div>
+<section id="about" class="home-section text-center">
+        <div class="heading-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="section-heading">
+                                <h2>Cancelar Reserva</h2>
+                                <p>&nbsp;</p>
+                              </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3 col-md-3">
-                    <div class="wow bounceInUp" data-wow-delay="0.5s">
-                        <div class="team boxed-grey">
-                            <div class="inner">
-                                <h5>BMW 320i</h5>
-                                <div class="avatar">
-                                <a href="VeiculoExecutivo/BMW320i.html">
-                                <img src="img/Exe/BMW320i_Exec.png" alt="" class="img-responsive img-rounded" /></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-3">
-                    <div class="wow bounceInUp" data-wow-delay="0.8s">
-                        <div class="team boxed-grey">
-                            <div class="inner">
-                                <h5>Cherolet Cruze</h5>
-                                <div class="avatar">
-                                    <a href="VeiculoExecutivo/CheroletCruze.html">
-                                    <img src="img/Exe/ChevroletCruze_Exec.png" alt="" class="img-responsive img-rounded" /></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-3 col-md-3">
-                    <div class="wow bounceInUp" data-wow-delay="1s">
-                        <div class="team boxed-grey">
-                            <div class="inner">
-                                <h5>Ford Fusion</h5>
-                                <div class="avatar">
-                                <a href="VeiculoExecutivo/FordFusion.html">
-                                <img src="img/Exe/FordFusion_Exec.png" alt="" class="img-responsive img-rounded" /></a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
-    </section>
 
-    <section id="Contato" class="home-section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="wow bounceInUp" data-wow-delay="0.2s">  
+                        <div class="inner">
+                                 
+                                <asp:Panel ID="Panel3" runat="server" >
+                                <asp:TextBox ID="codResCodLoc" runat="server" Height="24px" Width="381px">Codigo de Reserva ou Codigo de Locação</asp:TextBox>
+                                               <br/><br/>
+                                <asp:Button ID="ConsultarLocRes" runat="server" Text="Consultar" Width="188px" style="background-color: #1E3760; font-weight: 700;" Height="35px"/>
+                                </asp:Panel>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+        					
+        <section id="Contato" class="home-section text-center">
         <div class="heading-Contato">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="wow bounceInDown" data-wow-delay="0.4s">
                             <div class="section-heading">
-                                 <br /><br /><br /><br /><br /><br /><br /><br />
+                                <br /><br /><br /><br /><br /><br /><br /><br />
                                 <h2>Contato</h2><br /><br /><br /><br />
                             </div>
                         </div>
@@ -169,17 +138,18 @@
                     <div class="boxed-grey">
                         <form id="contact-form">
                             <div class="row">
-                                <div class="col-md-10">
+                                <div class="col-md-12">
+
                                     <div class="form-group">
                                         <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                                         <div class="col-lg-12">
-                                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                            <input type="text" class="form-control" id="inputEmail" placeholder="Email"/>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="inputPassword" class="col-lg-2 control-label">Nome</label>
                                         <div class="col-lg-12">
-                                            <input type="text" class="form-control" id="inputPassword" placeholder="Nome Completo">
+                                            <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo"/>
 
                                         </div>
                                     </div>
@@ -187,7 +157,7 @@
                                     <div class="form-group">
                                         <label for="inputPassword" class="col-lg-2 control-label">Telefone</label>
                                         <div class="col-lg-12">
-                                            <input type="tel" class="form-control" id="inputPassword" placeholder="Telefone Com DDD">
+                                            <input type="tel" class="form-control" id="inputTel" placeholder="Telefone Com DDD"/>
 
                                         </div>
                                     </div>
@@ -240,13 +210,14 @@
                             <strong>Email</strong><br>
                             <a href="mailto:#">pim3semestre2016@gmail.com</a>
                         </address>
-						<address>
-						
+                        
+                        <address>
+				            <br/>
                        	<ul class="company-social">
-                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
                         </ul>	
-						</address>
+				        </address>
 
 
                     </div>
@@ -267,18 +238,18 @@
                             </a>
                         </div>
                     </div>
-                    <p><strong>Seguros Associados</strong></p>
 
-                    <img src="img/seguros.png" />
+                    <p>Seguros Associados</p>
+
+                    <img src="Img/seguros.png" />
 
                 </div>
             </div>
         </div>
     </footer>
-
+</div>
+</form>
 
 
 </body>
 </html>
-
-
